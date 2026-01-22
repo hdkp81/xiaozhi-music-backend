@@ -1,5 +1,9 @@
 
+http://127.0.0.1:49891/?code=051aea1a0935e54e7de8&state=1cb4b7efb12242abb1d4e0d864108003
 
+lần  dùng HUG
+git config user.email "dinhbui3381@gmail.com"
+git config user.name "dinhbui81"
 
 # 1. Push code lên GitHub
 cd backend-railway
@@ -34,3 +38,18 @@ Bấm Generate Domain (hoặc “Add Domain”)
 
 Railway sẽ tạo cho bạn 1 link kiểu:
 https://ten-app-cua-ban.up.railway.app
+
+
+aa67.up.railway.app
+
+
+python -m esptool --chip esp32s3 merge_bin -o HDKPv210.220126pm.bin --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 build\bootloader\bootloader.bin 0x8000 build\partition_table\partition-table.bin 0xd000 build\ota_data_initial.bin 0x20000 build\xiaozhi.bin 0x800000 build\generated_assets.bin
+
+idf.py reconfigure
+hoặc idf.py -p COM3 build flash monitor
+
+
+idf.py fullclean
+idf.py set-target esp32s3
+idf.py menuconfig
+idf.py build  
