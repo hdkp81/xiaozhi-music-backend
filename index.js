@@ -93,5 +93,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🎵 Xiaozhi Music API running on port ${PORT}`);
+  console.log(`🎵 Xiaozhi Music API Version 2.0 (No Cookies) running on port ${PORT}`);
 });
