@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.json({ 
     status: 'OK', 
-    service: 'Xiaozhi Music API',
+    service: 'Xiaozhi Music API hdkp',
     endpoints: ['/search?q=song+name']
   });
 });
