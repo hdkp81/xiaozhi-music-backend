@@ -41,9 +41,7 @@ app.get('/search', async (req, res) => {
     console.log(`[${new Date().toISOString()}] Searching: ${q}`);
 
     // Use yt-dlp to search and extract audio URL
-    // Add --cookies-from-browser chrome to bypass bot detection
     // Use bestaudio for better quality (Opus format)
-    //const cmd = `yt-dlp -f "bestaudio/best" --cookies-from-browser chrome --get-url --get-title "ytsearch1:${q}"`;
 	const cmd = `yt-dlp -f "bestaudio/best" --get-url --get-title "ytsearch1:${q}"`;
     
     const { stdout, stderr } = await execPromise(cmd, {
