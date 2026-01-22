@@ -1,0 +1,36 @@
+
+
+
+# 1. Push code lên GitHub
+cd backend-railway
+git init
+git add .
+git commit -m "Initial commit"
+git remote set-url origin https://github.com/dinh-hub/xiaozhi-music-backend.git
+git push -u origin main
+
+# 2. Railway dashboard
+# - New Project → Deploy from GitHub repo
+# - Chọn repo vừa tạo
+# - Railway tự động deploy
+
+
+
+Cách lấy Railway URL (chuẩn nhất)
+
+Vào Railway.app → đăng nhập
+
+New Project → Deploy from GitHub Repo
+
+Chọn repo: dinh-hub/xiaozhi-music-backend
+
+Railway sẽ build + chạy
+
+Sau khi chạy xong:
+
+Vào project → tab Settings hoặc Domains / Networking
+
+Bấm Generate Domain (hoặc “Add Domain”)
+
+Railway sẽ tạo cho bạn 1 link kiểu:
+https://ten-app-cua-ban.up.railway.app
